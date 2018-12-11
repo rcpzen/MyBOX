@@ -1,12 +1,12 @@
 const webpack = require('webpack');
 const path = require('path');
 module.exports = {
-    mode:'production',
+    mode:"production",
     entry:'./src/assets/js/app.js',
     output:{
-        path:path.resolve(__dirname,'public/js'),
+        path:path.resolve(__dirname,'public/js/'),
         filename:'app.js',
-        publicPath:'./public'
+        publicPath:'/public/js/'
     },
     watch: true,
     module: {
