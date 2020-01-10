@@ -1,0 +1,9 @@
+const reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,24}))$/;
+ if (!reg.test(email)) {
+        this.$toasted.show("Please check your e-mail", {
+          type: "error",
+          position: "top-center",
+          duration: 5000
+        });
+        return;
+      }
